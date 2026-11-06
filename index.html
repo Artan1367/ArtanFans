@@ -15,52 +15,56 @@ color:#fff;
 line-height:1.9;
 }
 header{
-padding:18px 6%;
+padding:18px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:#111521;
-border-bottom:1px solid #c9a64b;
+border-bottom:1px solid #29251b;
+background:#10121b;
 }
 .logo{
 font-size:25px;
 font-weight:bold;
-color:#e9c66b;
+color:#e9bd58;
 }
 nav a{
-color:white;
+color:#ddd;
 text-decoration:none;
 margin:0 10px;
-font-size:13px;
+font-size:14px;
 }
 .hero{
-padding:90px 20px;
 text-align:center;
-background:linear-gradient(140deg,#171c2b,#080a10);
+padding:85px 20px;
+background:radial-gradient(circle at top,#34301e,#090b12 70%);
 }
 .hero h1{
-font-size:38px;
-color:#edcc75;
+font-size:42px;
+color:#f2ca70;
+margin:10px 0;
 }
 .hero p{
 color:#c5c5c5;
-max-width:550px;
-margin:15px auto 25px;
+font-size:17px;
 }
 .btn{
 display:inline-block;
+background:linear-gradient(120deg,#d5a63d,#f5d98b);
+color:#17130b;
 padding:12px 30px;
-background:#d9b45c;
-color:#111;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
+margin-top:20px;
 }
-section{
+.section{
 padding:55px 7%;
 text-align:center;
 }
-h2{color:#e9c66b}
+.section h2{
+color:#e9bd58;
+font-size:27px;
+}
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -68,44 +72,44 @@ gap:20px;
 margin-top:30px;
 }
 .card{
-background:#151a27;
+background:#151823;
 padding:25px;
-border:1px solid #33394b;
-border-radius:16px;
-transition:.3s;
+border:1px solid #34302a;
+border-radius:15px;
 }
-.card:hover{
-transform:translateY(-5px);
-border-color:#d9b45c;
+.card h3{color:#edc568}
+.card p{color:#bbb;font-size:14px}
+.icon{
+font-size:35px;
 }
-.card h3{color:#e9c66b}
-.card p{color:#ccc;font-size:14px}
 .about{
-background:#111521;
+background:#11141e;
 }
 .join{
-background:linear-gradient(120deg,#171c2b,#10131d);
-}
-.join a{margin-top:15px}
-footer{
-padding:25px;
+background:linear-gradient(130deg,#252113,#10121b);
+padding:50px 20px;
 text-align:center;
-background:#080a10;
-color:#999;
-font-size:12px;
+}
+footer{
+text-align:center;
+padding:25px;
+background:#07080d;
+color:#888;
+border-top:1px solid #29251b;
+font-size:13px;
 }
 @media(max-width:600px){
 header{flex-direction:column;gap:10px}
-nav a{margin:0 6px}
+nav a{margin:0 6px;font-size:12px}
+.hero h1{font-size:30px}
 .hero{padding:65px 15px}
-.hero h1{font-size:28px}
 }
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">ARTANFANS</div>
+<div class="logo">✦ ARTANFANS</div>
 <nav>
 <a href="#home">خانه</a>
 <a href="#about">درباره ما</a>
@@ -114,52 +118,62 @@ nav a{margin:0 6px}
 </nav>
 </header>
 
-<div class="hero" id="home">
-<h1>به دنیای ArtanFans خوش آمدید</h1>
-<p>
-اینجا خانه طرفداران آرتان است.
-با ما همراه باشید تا جدیدترین اخبار،
-مطالب و اتفاقات را دنبال کنید.
-</p>
-<a class="btn" href="#join">به جمع ما بپیوندید</a>
-</div>
+<section class="hero" id="home">
+<div style="font-size:48px;color:#e9bd58">✦</div>
+<h1>به آرتان فنز خوش آمدید</h1>
+<p>اینجا خانه هواداران، علاقه‌مندان و دوستداران ماست.</p>
+<a class="btn" href="#about">بیشتر بدانید</a>
+</section>
 
-<section id="about" class="about">
-<h2>درباره ArtanFans</h2>
+<section class="section about" id="about">
+<h2>درباره آرتان فنز</h2>
 <p>
-ArtanFans یک باشگاه هواداری برای علاقه‌مندان است؛
-جایی برای ارتباط، همراهی و به اشتراک گذاشتن
-مطالب جذاب و اخبار جدید.
+آرتان فنز یک باشگاه هواداری برای گردهمایی علاقه‌مندان،
+اشتراک‌گذاری اخبار، مطالب و ایجاد ارتباط میان هواداران است.
 </p>
 </section>
 
-<section id="news">
-<h2>بخش‌های سایت</h2>
+<section class="section" id="news">
+<h2>بخش‌های آرتان فنز</h2>
 <div class="cards">
+
 <div class="card">
-<h3>اخبار جدید</h3>
-<p>جدیدترین خبرها و اطلاعیه‌های آرتان را دنبال کنید.</p>
+<div class="icon">📰</div>
+<h3>اخبار و مطالب</h3>
+<p>جدیدترین اخبار و مطالب جذاب باشگاه هواداران.</p>
 </div>
+
 <div class="card">
+<div class="icon">⭐</div>
+<h3>هواداران</h3>
+<p>محیطی دوستانه برای علاقه‌مندان و هواداران.</p>
+</div>
+
+<div class="card">
+<div class="icon">📸</div>
 <h3>گالری تصاویر</h3>
-<p>تصاویر و لحظات جذاب را در این بخش مشاهده کنید.</p>
+<p>نمایش تصاویر و خاطرات زیبای هواداری.</p>
 </div>
+
 <div class="card">
-<h3>باشگاه هواداران</h3>
-<p>با دیگر علاقه‌مندان همراه شوید و ارتباط برقرار کنید.</p>
+<div class="icon">🤝</div>
+<h3>ارتباط با ما</h3>
+<p>پیشنهادها و نظرات خود را با ما به اشتراک بگذارید.</p>
 </div>
+
 </div>
 </section>
 
 <section class="join" id="join">
-<h2>به خانواده ArtanFans بپیوندید</h2>
-<p>از همراهی شما سپاسگزاریم.</p>
-<a class="btn" href="mailto:info@example.com">ارتباط با ما</a>
+<h2 style="color:#f0c968">به خانواده آرتان فنز بپیوندید</h2>
+<p>با ما همراه باشید و از مطالب جدید باشگاه باخبر شوید.</p>
+<a href="#home" class="btn">بازگشت به صفحه اصلی</a>
 </section>
 
 <footer>
-<p>© 2026 ArtanFans</p>
+<p>✦ ARTANFANS ✦</p>
 <p>تمام حقوق این وب‌سایت محفوظ است.</p>
+<p>طراحی اختصاصی باشگاه هواداران آرتان فنز</p>
 </footer>
 
 </body>
